@@ -15,13 +15,13 @@ def readRecipientEmails():
 def smtServer():
     smtp_server='smtp.gmail.com'
     port=465
-    sender_email = "i180508@nu.edu.pk"  # Enter your address
-    receiver_email = "asimgujjarpk@gmail.com"  # Enter receiver address
+    sender_email = ""  # Enter your address
+    receiver_email = ""  # Enter receiver address
     password = input("Type your password and press enter: ")
     message = """\
     Subject: 
-
-    This message is sent from Python."""
+    
+    Simple Message using Python"""
 
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
